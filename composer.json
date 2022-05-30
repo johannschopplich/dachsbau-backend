@@ -1,0 +1,22 @@
+{
+  "require": {
+    "php": ">=8.0.0",
+    "getkirby/cms": "^3.6",
+    "getkirby/kql": "^1.0",
+    "johannschopplich/kirby-extended": "^2.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "KirbyHeadless\\Api\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}
