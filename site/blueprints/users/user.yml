@@ -1,0 +1,16 @@
+title:
+  de: "Redakteur*in"
+  en: Editor
+
+description:
+  de: Kann alle Inhalte bearbeiten.
+  en: May edit every content.
+
+permissions:
+  access:
+    settings: false
+    users: false
+  user:
+    changeRole: false
+    delete: false
+  users: false
