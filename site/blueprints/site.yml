@@ -11,6 +11,7 @@ columns:
 
       pages:
         type: pages
+        headling: Seiten
         create: default
         templates:
           - about
