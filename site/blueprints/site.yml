@@ -15,5 +15,6 @@ columns:
         create: default
         templates:
           - about
-          - home
           - default
+          - home
+          - notes

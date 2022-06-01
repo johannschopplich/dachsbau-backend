@@ -7,13 +7,13 @@ icon: 📖
 status:
   draft:
     label: Entwurf
-    text: Der Post befindet sich noch im Entwurfsmodus. Sie kann nur von Redakteur*innen mit Panel-Zugang gesehen werden.
+    text: Der Beitrag befindet sich noch im Entwurfsmodus. Sie kann nur von Redakteur*innen mit Panel-Zugang gesehen werden.
   unlisted:
     label: In Überprüfung
-    text: Der Post ist online und kann mit der direkten URL besucht werden. Das Team muss noch die endgültige Freigabe zur Veröffentlichung erteilen.
+    text: Der Beitrag ist online und kann mit der direkten URL besucht werden. Das Team muss noch die endgültige Freigabe zur Veröffentlichung erteilen.
   listed:
     label: Veröffentlicht
-    text: Der Post ist online und im Blog aufgeführt.
+    text: Der Beitrag ist online und im Blog aufgeführt.
 
 columns:
   - width: 2/3
