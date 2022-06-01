@@ -1,35 +1,52 @@
-# Each page blueprint must have a title, the title may be different from the file name
-title: Notes
+title: Beiträge
 
-# Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 📖
 
-# Define the form layout with two columns
-# More about columns: https://getkirby.com/docs/guide/blueprints/layout#defining-columns
+options:
+  changeSlug: false
+  changeTemplate: false
+  delete: false
 
-columns:
-  - width: 1/3
-    # In the first column, we reuse the `notes` section
-    # (defined in `/site/blueprints/sections/notes.yml` twice with different page status and headline
-    sections:
-      drafts:
-        extends: sections/notes
-        headline: Drafts
-        status: draft
+tabs:
+  articles:
+    label: Beiträge
+    icon: draft
+    columns:
+      - width: 1/3
+        sections:
+          drafts:
+            extends: sections/notes
+            headline: Entwürfe
+            status: draft
 
-      unlisted:
-        extends: sections/notes
-        headline: In Review
-        status: unlisted
+          unlisted:
+            extends: sections/notes
+            headline: In Überprüfung
+            status: unlisted
 
-  - width: 2/3
-    # In the second column, we reuse the same section, this time for listed pages and with a different headline
-    sections:
-      listed:
-        extends: sections/notes
-        headline: Published
-        status: listed
-        size: small
-        layout: cards
+      - width: 2/3
+        sections:
+          listed:
+            extends: sections/notes
+            headline: Veröffentlicht
+            status: listed
+            size: small
+            layout: cards
 
-# More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
+  settings:
+    label: Einstellungen
+    icon: settings
+    columns:
+      - width: 1/2
+        sections:
+          categories:
+            type: fields
+            fields:
+              categories:
+                label: Kategorien
+                type: structure
+                sortBy: title asc
+                fields:
+                  title:
+                    label: Titel
+                    type: text

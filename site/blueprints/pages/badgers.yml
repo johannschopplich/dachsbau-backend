@@ -1,0 +1,19 @@
+title: Dachsarten
+
+icon: 🦡
+
+options:
+  changeSlug: false
+  changeTemplate: false
+  delete: false
+
+sections:
+  drafts:
+    extends: sections/badgers
+    headline: Entwürfe
+    status: draft
+
+  listed:
+    extends: sections/badgers
+    headline: Veröffentlichte Dachsarten
+    status: listed

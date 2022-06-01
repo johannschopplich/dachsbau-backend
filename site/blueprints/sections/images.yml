@@ -1,0 +1,5 @@
+type: files
+headline: Bilder
+template: image
+sortBy: filename desc
+empty: Noch keine Bilder

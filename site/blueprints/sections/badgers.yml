@@ -1,0 +1,11 @@
+type: pages
+headline: Dachsarten
+parent: kirby.page("badgers")
+template: badger
+empty: Noch keine Dachsarten
+layout: cards
+size: small
+image:
+  query: page.cover
+  cover: true
+  ratio: 5/4

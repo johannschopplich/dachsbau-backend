@@ -1,0 +1,27 @@
+title: Dachsart
+
+icon: 🦡
+
+status:
+  draft: true
+  listed: true
+
+columns:
+  - width: 2/3
+    sections:
+      text: sections/text
+
+  - width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          cover: fields/cover
+          headline:
+            label: Überschrift
+            type: text
+            placeholder: "{{ page.title }}"
+            help: Leer lassen, um den Titel als Überschrift zu verwenden
+          tags: true
+      images: sections/images
+      helpers: sections/punctuation

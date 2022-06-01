@@ -11,8 +11,8 @@ vendor
 !/storage/accounts/.gitkeep
 /storage/cache/*
 !/storage/cache/.gitkeep
-# /storage/content/*
-# !/storage/content/.gitkeep
+/storage/content/*
+!/storage/content/.gitkeep
 /storage/logs/*
 !/storage/logs/.gitkeep
 /storage/sessions/*

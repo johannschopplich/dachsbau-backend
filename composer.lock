@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b436be971d5b4922a939df6fe564720",
+    "content-hash": "8dc2b47e0b6c687903ab586319357316",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -431,6 +431,56 @@
                 "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.11.1"
             },
             "time": "2022-05-24T10:47:45+00:00"
+        },
+        {
+            "name": "johannschopplich/kirby-punctuation-section",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johannschopplich/kirby-punctuation-section.git",
+                "reference": "0258ca13d5dffa3f8094e434b2eba9fe119147a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/0258ca13d5dffa3f8094e434b2eba9fe119147a4",
+                "reference": "0258ca13d5dffa3f8094e434b2eba9fe119147a4",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "getkirby/cms": "^3.6"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johann Schopplich",
+                    "email": "pkg@johannschopplich.com",
+                    "homepage": "https://johannschopplich.com"
+                }
+            ],
+            "description": "Copy commonly used characters to your clipboard",
+            "homepage": "https://github.com/johannschopplich/kirby-punctuation-section#readme",
+            "keywords": [
+                "clipboard",
+                "kirby",
+                "punctuation",
+                "typography"
+            ],
+            "support": {
+                "issues": "https://github.com/johannschopplich/kirby-punctuation-section/issues",
+                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v1.1.7"
+            },
+            "time": "2021-11-30T18:02:46+00:00"
         },
         {
             "name": "laminas/laminas-escaper",

@@ -9,6 +9,8 @@ return [
         'slug' => env('KIRBY_PANEL_SLUG', 'panel')
     ],
 
+    'date.handler' => 'intl',
+
     'hooks' => [
         // Explicitly register catch-all routes only when Kirby and all plugins
         // have been loaded to ensure no other routes are overwritten
