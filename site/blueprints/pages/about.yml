@@ -13,8 +13,8 @@ options:
 
 tabs:
   content:
+    label: Inhalt
     icon: text
-    label: content
     fields:
       layout:
         label: Layout
@@ -26,30 +26,27 @@ tabs:
 
   contact:
     icon: map
-    label: Contact
+    label: Kontakt
     columns:
       - width: 1/2
         fields:
           address:
-            label: Address
+            label: Adresse
             type: writer
             inline: true
           email:
-            label: Email
+            label: E-Mail
             type: email
-          phone:
-            label: Phone
-            type: tel
       - width: 1/2
         fields:
           social:
-            label: On the web
+            label: Im Internetz
             type: structure
             columns:
               platform: true
             fields:
               platform:
-                label: Platform
+                label: Plattform
                 type: text
                 width: 1/2
               url:
