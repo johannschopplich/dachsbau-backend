@@ -12,7 +12,7 @@ return [
     [
         'pattern' => ['(:all)', '(:all).json'],
         'action' => Api::createHandler(
-            // [Middlewares::class, 'hasAuthHeader'],
+            [Middlewares::class, 'hasAuthHeader'],
             [Middlewares::class, 'hasBearerToken'],
             function ($context, $args) {
                 // The `$args` array contains the route parameters
