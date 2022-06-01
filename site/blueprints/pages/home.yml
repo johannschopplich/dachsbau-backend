@@ -3,4 +3,6 @@ title: Startseite
 icon: 🏠
 
 options:
+  changeStatus: false
+  delete: false
   read: false
