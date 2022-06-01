@@ -38,5 +38,5 @@ columns:
               fetch: page.parent.categories.toStructure
               text: "{{ structureItem.title }}"
               value: "{{ structureItem.title }}"
-        helpers: sections/punctuation
-        images: sections/images
+      images: sections/images
+      helpers: sections/punctuation
