@@ -17,7 +17,7 @@ fieldsets:
     type: group
     fieldsets:
       - image
-      - gallery
+      # - gallery
       - video
   code:
     label: Code
