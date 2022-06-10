@@ -3,6 +3,7 @@
 namespace KirbyHeadless\Api;
 
 use Exception;
+use Kirby\Cms\File;
 use Kirby\Http\Response;
 use Kirby\Toolkit\A;
 
@@ -22,7 +23,7 @@ class Api
             foreach ($fns as $fn) {
                 $result = $fn($context, $args);
 
-                if (is_a($result, Response::class)) {
+                if (is_a($result, Response::class) || is_a($result, File::class)) {
                     return $result;
                 }
 
@@ -52,7 +53,9 @@ class Api
             $body['result'] = $data;
         }
 
-        return Response::json($body, $code);
+        return Response::json($body, $code, null, [
+            'Access-Control-Allow-Origin' => env('KIRBY_HEADLESS_ALLOW_ORIGIN')
+        ]);
     }
 
     /**
@@ -83,5 +86,25 @@ class Api
         }
 
         return $messages[$code];
+    }
+
+    /**
+     * Add CORS headers to the response
+     *
+     * @return void
+     */
+    public static function addCorsAllowHeaders(): void
+    {
+        $headers = [
+            'Access-Control-Allow-Origin' => env('KIRBY_HEADLESS_ALLOW_ORIGIN'),
+            'Access-Control-Allow-Methods' => 'GET, POST, OPTIONS',
+            'Access-Control-Allow-Headers' => 'Authorization, Content-Type'
+        ];
+
+        foreach ($headers as $key => $value) {
+            if ($value !== null) {
+                kirby()->response()->header($key, $value);
+            }
+        }
     }
 }
