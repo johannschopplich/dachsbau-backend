@@ -1,6 +1,6 @@
 type: pages
 headline: Beiträge
-parent: kirby.page("notes")
+parent: kirby.page("blog")
 template: note
 sortBy: date desc
 info: "{{ page.published.toDate('dd.MM.Y') }}"

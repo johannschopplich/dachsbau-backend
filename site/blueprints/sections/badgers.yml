@@ -1,6 +1,6 @@
 type: pages
 headline: Dachsarten
-parent: kirby.page("badgers")
+parent: kirby.page("dachse")
 template: badger
 empty: Noch keine Dachsarten
 layout: cards
