@@ -30,6 +30,11 @@ return [
         ]
     ],
 
+    // Enable basic auth when using KQL with default `/api/query` endpoint
+    'api' => [
+        'basicAuth' => true
+    ],
+
     'kql' => [
         'auth' => 'bearer'
     ]
