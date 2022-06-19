@@ -32,6 +32,6 @@ tabs:
           content:
             type: fields
             fields:
-              footerPages:
+              footer:
                 label: Fußzeile
                 type: pages
