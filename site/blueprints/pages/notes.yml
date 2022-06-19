@@ -2,6 +2,10 @@ title: Beiträge
 
 icon: 📖
 
+status:
+  unlisted: true
+  listed: true
+
 options:
   changeSlug: false
   changeTemplate: false
