@@ -2,9 +2,9 @@ title: Über uns
 
 icon: 🦡
 
-status:
-  draft: true
-  listed: true
+# status:
+#   draft: true
+#   listed: true
 
 options:
   changeSlug: false
