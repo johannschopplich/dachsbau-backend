@@ -54,3 +54,11 @@ tabs:
                   title:
                     label: Titel
                     type: text
+
+      - width: 1/2
+        sections:
+          categories:
+            type: fields
+            fields:
+              description: fields/description
+

@@ -17,11 +17,7 @@ columns:
         type: fields
         fields:
           cover: fields/cover
-          headline:
-            label: Überschrift
-            type: text
-            placeholder: "{{ page.title }}"
-            help: Leer lassen, um den Titel als Überschrift zu verwenden
+          description: fields/description
           tags: true
       images: sections/images
       helpers: sections/punctuation
