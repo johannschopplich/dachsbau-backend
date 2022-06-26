@@ -1,4 +1,4 @@
-title: Dachsarten
+title: Angebote
 
 icon: 🦡
 
@@ -15,5 +15,5 @@ sections:
 
   listed:
     extends: sections/badgers
-    headline: Veröffentlichte Dachsarten
+    headline: Veröffentlichte Angebote
     status: listed

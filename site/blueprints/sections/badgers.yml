@@ -1,8 +1,8 @@
 type: pages
-headline: Dachsarten
-parent: kirby.page("dachse")
+headline: Angebote
+parent: kirby.page("angebote")
 template: badger
-empty: Noch keine Dachsarten
+empty: Noch keine Angebote
 layout: cards
 size: small
 image:
