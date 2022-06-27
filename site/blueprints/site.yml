@@ -41,5 +41,10 @@ tabs:
           meta:
             type: fields
             fields:
-              cover: fields/cover
+              cover:
+                type: files
+                multiple: false
+                query: site.images.template('image')
+                uploads:
+                  template: image
               description: fields/description
