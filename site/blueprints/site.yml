@@ -7,7 +7,7 @@ tabs:
     columns:
       - width: 1/2
         sections:
-          albums: sections/badgers
+          badgers: sections/badgers
 
       - width: 1/2
         sections:
