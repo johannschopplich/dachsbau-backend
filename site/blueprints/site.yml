@@ -41,4 +41,5 @@ tabs:
           meta:
             type: fields
             fields:
+              cover: fields/cover
               description: fields/description
