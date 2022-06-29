@@ -8,28 +8,28 @@ use Kirby\Http\Uri;
             return $this->content()->cover()->toFile() ?? $this->image();
         },
         'frontendUrl' => function () {
-            $frontendUrl = env('KIRBY_FRONTEND_URL');
+            $host = env('KIRBY_FRONTEND_HOST');
 
-            if (empty($frontendUrl)) {
+            if (empty($host)) {
                 return null;
             }
 
             $url = new Uri($this->url());
-            $url->host = $frontendUrl;
+            $url->host = $host;
 
             return $url;
         }
     ],
     'siteMethods' => [
         'frontendUrl' => function () {
-            $frontendUrl = env('KIRBY_FRONTEND_URL');
+            $host = env('KIRBY_FRONTEND_HOST');
 
-            if (empty($frontendUrl)) {
+            if (empty($host)) {
                 return null;
             }
 
             $url = kirby()->url('index', true);
-            $url->host = $frontendUrl;
+            $url->host = $host;
 
             return $url;
         }
