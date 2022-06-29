@@ -15,6 +15,9 @@ status:
     label: Veröffentlicht
     text: Der Beitrag ist online und im Blog aufgeführt.
 
+options:
+  preview: "{{ page.frontendUrl }}"
+
 columns:
   - width: 2/3
     sections:

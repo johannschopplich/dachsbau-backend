@@ -2,7 +2,9 @@
 
 > ℹ️ Forked from [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter). All of the features and settings apply here as well.
 
-This website is intended as the backend for the Nuxt.js frontend. If the URL is called and no `Authentication` header is sent with the requerst, the user will automatically forwarded to the Kirby Panel. Especially useful users managing content.
+This website is intended as the backend for the Nuxt 3 frontend. If the URL is called and no `Authentication` header is sent with the requerst, the user will automatically forwarded to the Kirby Panel.
+
+See the [dachsbau-frontend](https://github.com/johannschopplich/dachsbau-frontend) repository for the whole frontend.
 
 ## Prerequisites
 
@@ -32,13 +34,7 @@ Optionally, adapt it's values.
 
 ## Usage
 
-### Bearer Token
-
-If you prefer to use a token to secure your Kirby installation, set the environment variable `KIRBY_HEADLESS_API_TOKEN` with a token of your choice.
-
-You will then have to provide the header `Bearer ${token}` with each request.
-
-> ⚠️ Without a token the `/query` route would be publicly accessible by everyone. Be careful.
+See the [dachsbau-frontend](https://github.com/johannschopplich/dachsbau-frontend) repository.
 
 ### Deployment
 

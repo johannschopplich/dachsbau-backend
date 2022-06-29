@@ -6,6 +6,9 @@ status:
   draft: true
   listed: true
 
+options:
+  preview: "{{ page.frontendUrl }}"
+
 columns:
   - width: 2/3
     sections:

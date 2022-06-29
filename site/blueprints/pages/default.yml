@@ -2,6 +2,9 @@ title: Einfache Seite
 
 icon: 📝
 
+options:
+  preview: "{{ page.frontendUrl }}"
+
 columns:
   - width: 2/3
     sections:

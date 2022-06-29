@@ -2,3 +2,4 @@ title: Fehler
 
 options:
   read: false
+  preview: "{{ page.frontendUrl }}"

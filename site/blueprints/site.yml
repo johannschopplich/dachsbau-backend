@@ -1,5 +1,8 @@
 title: Übersicht
 
+options:
+  preview: "{{ site.frontendUrl }}"
+
 tabs:
   dashboard:
     label: Inhalt

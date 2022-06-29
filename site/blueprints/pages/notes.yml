@@ -10,6 +10,7 @@ options:
   changeSlug: false
   changeTemplate: false
   delete: false
+  preview: "{{ page.frontendUrl }}"
 
 tabs:
   articles:
