@@ -58,8 +58,5 @@ tabs:
 
       - width: 1/2
         sections:
-          meta:
-            type: fields
-            fields:
-              description: fields/description
+          description: sections/description
 
