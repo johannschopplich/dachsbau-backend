@@ -4,7 +4,7 @@
 
 This website is intended as the backend for the Nuxt 3 frontend. If the URL is called and no `Authentication` header is sent with the requerst, the user will automatically forwarded to the Kirby Panel.
 
-See the [dachsbau-frontend](https://github.com/johannschopplich/dachsbau-frontend) repository for the whole frontend.
+👉 See the [dachsbau-frontend](https://github.com/johannschopplich/dachsbau-frontend) repository for the whole frontend code!
 
 ## Prerequisites
 
