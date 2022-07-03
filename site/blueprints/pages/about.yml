@@ -11,7 +11,7 @@ options:
 tabs:
   content:
     label: Inhalt
-    icon: text
+    icon: grid-right
     fields:
       layout: fields/layout
 
