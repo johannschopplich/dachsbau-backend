@@ -6,6 +6,6 @@ sortBy: date desc
 info: "{{ page.published.toDate('dd.MM.Y') }}"
 empty: Noch keine Beiträge
 image:
-  query: page.cover
+  query: page.cover.toFile
   cover: true
   ratio: 3/2

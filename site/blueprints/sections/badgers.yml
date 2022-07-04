@@ -6,6 +6,6 @@ empty: Noch keine Angebote
 layout: cards
 size: small
 image:
-  query: page.cover
+  query: page.cover.toFile
   cover: true
   ratio: 5/4
