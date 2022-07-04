@@ -1,15 +1,10 @@
 {
   "require": {
     "php": ">=8.0.0",
-    "getkirby/cms": "^3.6",
+    "getkirby/cms": "^3.7",
     "getkirby/kql": "^1.0",
     "johannschopplich/kirby-extended": "^2.11",
     "johannschopplich/kirby-punctuation-section": "^1.1"
-  },
-  "autoload": {
-    "psr-4": {
-      "KirbyHeadless\\Api\\": "src/"
-    }
   },
   "config": {
     "optimize-autoloader": true,
