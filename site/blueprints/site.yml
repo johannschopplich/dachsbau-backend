@@ -23,6 +23,7 @@ tabs:
             templates:
               - about
               - default
+              - error
               - home
               - notes
 
