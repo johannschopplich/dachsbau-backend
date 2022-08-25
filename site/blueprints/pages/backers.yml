@@ -15,7 +15,10 @@ columns:
           backers:
             label: "Freund*innen"
             type: structure
-            sortBy: title asc
+            columns:
+              title: true
+              text: true
+              logo: true
             fields:
               title:
                 label: Titel
