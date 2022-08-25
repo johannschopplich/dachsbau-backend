@@ -1,0 +1,39 @@
+title: "Freund*innen"
+
+icon: 🫂
+
+options:
+  preview: "{{ page.frontendUrl }}"
+
+columns:
+  - width: 2/3
+    sections:
+      text: sections/text
+      backers:
+        type: fields
+        fields:
+          backers:
+            label: "Freund*innen"
+            type: structure
+            sortBy: title asc
+            fields:
+              title:
+                label: Titel
+                type: text
+              text:
+                label: Text
+                type: writer
+              logo:
+                label: Logo
+                type: files
+                multiple: false
+                query: page.images.template('image')
+                uploads:
+                  template: image
+
+  - width: 1/3
+    sections:
+      cover: sections/cover
+      description: sections/description
+      images: sections/images
+      helpers: sections/punctuation
