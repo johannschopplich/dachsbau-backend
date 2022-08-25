@@ -15,6 +15,7 @@ columns:
           backers:
             label: "Freund*innen"
             type: structure
+            inline: true
             columns:
               title: true
               text: true
