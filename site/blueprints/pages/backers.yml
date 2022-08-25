@@ -20,6 +20,11 @@ columns:
               title:
                 label: Titel
                 type: text
+                width: 1/2
+              website:
+                label: Website
+                type: url
+                width: 1/2
               text:
                 label: Text
                 type: writer
