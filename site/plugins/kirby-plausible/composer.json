@@ -1,8 +1,8 @@
 {
-  "name": "floriankarsten/kirby-plausible",
+  "name": "johannschopplich/kirby-plausible",
   "description": "Plausible integration for Kirby CMS",
   "type": "kirby-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "kirby",
     "plausible",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b17400eecb527ad4e59687c4da0cc7ff",
+    "content-hash": "b80a72f9446698cb00ee740c471907ce",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -452,16 +452,16 @@
         },
         {
             "name": "johannschopplich/kirby-plausible",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-plausible.git",
-                "reference": "9dfa340eb76dd90caa347ce658b4b32c55fcfa1a"
+                "reference": "b0d615f5c1dc39e1562edc4ea02d2dad75fd01f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/9dfa340eb76dd90caa347ce658b4b32c55fcfa1a",
-                "reference": "9dfa340eb76dd90caa347ce658b4b32c55fcfa1a",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/b0d615f5c1dc39e1562edc4ea02d2dad75fd01f7",
+                "reference": "b0d615f5c1dc39e1562edc4ea02d2dad75fd01f7",
                 "shasum": ""
             },
             "require": {
@@ -494,9 +494,9 @@
                 "plausible"
             ],
             "support": {
-                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.1.0"
+                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.2.0"
             },
-            "time": "2022-09-02T10:59:48+00:00"
+            "time": "2022-09-02T11:06:13+00:00"
         },
         {
             "name": "johannschopplich/kirby-punctuation-section",
