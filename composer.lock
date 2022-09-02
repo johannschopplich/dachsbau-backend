@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "173f9d3d6a89a62d7d01a65b3544ac63",
+    "content-hash": "b17400eecb527ad4e59687c4da0cc7ff",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -449,6 +449,54 @@
                 "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.11.2"
             },
             "time": "2022-06-22T15:33:19+00:00"
+        },
+        {
+            "name": "johannschopplich/kirby-plausible",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johannschopplich/kirby-plausible.git",
+                "reference": "9dfa340eb76dd90caa347ce658b4b32c55fcfa1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/9dfa340eb76dd90caa347ce658b4b32c55fcfa1a",
+                "reference": "9dfa340eb76dd90caa347ce658b4b32c55fcfa1a",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "getkirby/cms": "^3.6"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johann Schopplich",
+                    "email": "pkg@johannschopplich.com",
+                    "homepage": "https://johannschopplich.com"
+                }
+            ],
+            "description": "Plausible integration for Kirby CMS",
+            "homepage": "https://github.com/johannschopplich/kirby-plausible#readme",
+            "keywords": [
+                "analytics",
+                "kirby",
+                "plausible"
+            ],
+            "support": {
+                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.1.0"
+            },
+            "time": "2022-09-02T10:59:48+00:00"
         },
         {
             "name": "johannschopplich/kirby-punctuation-section",

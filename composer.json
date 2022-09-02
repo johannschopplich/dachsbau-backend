@@ -4,7 +4,8 @@
     "getkirby/cms": "^3.7",
     "getkirby/kql": "^1.0",
     "johannschopplich/kirby-extended": "^2.11",
-    "johannschopplich/kirby-punctuation-section": "^1.1"
+    "johannschopplich/kirby-punctuation-section": "^1.1",
+    "johannschopplich/kirby-plausible": "^0.1.0"
   },
   "scripts": {
     "start": [

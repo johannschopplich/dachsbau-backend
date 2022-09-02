@@ -945,9 +945,9 @@ packages:
       postcss-dir-pseudo-class: 6.0.5_postcss@8.4.16
       postcss-load-config: 4.0.1_postcss@8.4.16
       postcss-logical: 5.0.4_postcss@8.4.16
-      sass: 1.54.7
+      sass: 1.54.8
       unconfig: 0.3.5
-      vite: 3.0.9_sass@1.54.7
+      vite: 3.0.9_sass@1.54.8
       vite-plugin-full-reload: 1.0.4_vite@3.0.9
       vue: 2.7.10
     transitivePeerDependencies:
@@ -1271,8 +1271,8 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /sass/1.54.7:
-    resolution: {integrity: sha512-3q7MQz7sCpVG6TLhUfZwGOcd2/sm2ghYN2JEdRjNiW04ILdvahdo9GuAs+bxsxZ3hDCKv+wUT5w0iFWGU0CxlA==}
+  /sass/1.54.8:
+    resolution: {integrity: sha512-ib4JhLRRgbg6QVy6bsv5uJxnJMTS2soVcCp9Y88Extyy13A8vV0G1fAwujOzmNkFQbR3LvedudAMbtuNRPbQww==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -1406,10 +1406,10 @@ packages:
     dependencies:
       picocolors: 1.0.0
       picomatch: 2.3.1
-      vite: 3.0.9_sass@1.54.7
+      vite: 3.0.9_sass@1.54.8
     dev: true
 
-  /vite/3.0.9_sass@1.54.7:
+  /vite/3.0.9_sass@1.54.8:
     resolution: {integrity: sha512-waYABTM+G6DBTCpYAxvevpG50UOlZuynR0ckTK5PawNVt7ebX6X7wNXHaGIO6wYYFXSM7/WcuFuO2QzhBB6aMw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1432,7 +1432,7 @@ packages:
       postcss: 8.4.16
       resolve: 1.22.1
       rollup: 2.77.3
-      sass: 1.54.7
+      sass: 1.54.8
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
