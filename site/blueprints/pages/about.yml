@@ -8,39 +8,5 @@ options:
   delete: false
   preview: "{{ page.frontendUrl }}"
 
-tabs:
-  content:
-    label: Inhalt
-    icon: grid-right
-    fields:
-      layout: fields/layout
-
-  contact:
-    icon: map
-    label: Kontakt
-    columns:
-      - width: 1/2
-        fields:
-          address:
-            label: Adresse
-            type: writer
-            inline: true
-          email:
-            label: E-Mail
-            type: email
-      - width: 1/2
-        fields:
-          social:
-            label: Im Internetz
-            type: structure
-            columns:
-              platform: true
-            fields:
-              platform:
-                label: Plattform
-                type: text
-                width: 1/2
-              url:
-                label: URL
-                type: url
-                width: 1/2
+fields:
+  layout: fields/layout
