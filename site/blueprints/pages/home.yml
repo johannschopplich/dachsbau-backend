@@ -16,6 +16,13 @@ columns:
           intro:
             label: Intro
             type: text
+          heroImage:
+            label: Einstiegsbild
+            type: files
+            multiple: false
+            query: page.images.template('image')
+            uploads:
+              template: image
           contact:
             label: Kontakt
             type: writer

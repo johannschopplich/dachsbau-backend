@@ -47,9 +47,6 @@ tabs:
             type: fields
             fields:
               cover:
-                type: files
-                multiple: false
+                extends: fields/cover
                 query: site.images.template('image')
-                uploads:
-                  template: image
               description: fields/description
