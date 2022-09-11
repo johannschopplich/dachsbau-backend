@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "798f1a2d6cdfc648be306f9074cc62c8",
+    "content-hash": "35e5eb2ec2b3558e983d0684a3414b2b",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -501,24 +501,24 @@
         },
         {
             "name": "johannschopplich/kirby-punctuation-section",
-            "version": "1.1.7",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-punctuation-section.git",
-                "reference": "0258ca13d5dffa3f8094e434b2eba9fe119147a4"
+                "reference": "a5408458758ea5b6f439ba71a45534aa5fdf9c79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/0258ca13d5dffa3f8094e434b2eba9fe119147a4",
-                "reference": "0258ca13d5dffa3f8094e434b2eba9fe119147a4",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/a5408458758ea5b6f439ba71a45534aa5fdf9c79",
+                "reference": "a5408458758ea5b6f439ba71a45534aa5fdf9c79",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2",
-                "php": ">=7.4.0"
+                "php": ">=8.0.0"
             },
             "require-dev": {
-                "getkirby/cms": "^3.6"
+                "getkirby/cms": "^3.7"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -545,9 +545,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-punctuation-section/issues",
-                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v1.1.7"
+                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.0.0"
             },
-            "time": "2021-11-30T18:02:46+00:00"
+            "time": "2022-09-11T15:45:07+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
