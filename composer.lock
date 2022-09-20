@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35e5eb2ec2b3558e983d0684a3414b2b",
+    "content-hash": "bb8d8a724455df7aceda27a0de25adb3",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -390,23 +390,23 @@
             "time": "2022-07-30T15:56:11+00:00"
         },
         {
-            "name": "johannschopplich/kirby-extended",
-            "version": "2.11.3",
+            "name": "johannschopplich/kirby-helpers",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/johannschopplich/kirby-extended.git",
-                "reference": "2983531a80f95e5ae18e2f9a0674ca29e49acad1"
+                "url": "https://github.com/johannschopplich/kirby-helpers.git",
+                "reference": "2ad1bce31097ef93cb28ce767db5c96470e821ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-extended/zipball/2983531a80f95e5ae18e2f9a0674ca29e49acad1",
-                "reference": "2983531a80f95e5ae18e2f9a0674ca29e49acad1",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-helpers/zipball/2ad1bce31097ef93cb28ce767db5c96470e821ed",
+                "reference": "2ad1bce31097ef93cb28ce767db5c96470e821ed",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2",
                 "php": ">=8.0.0",
-                "symfony/polyfill-php80": "^1.23",
+                "symfony/polyfill-php80": "^1.26",
                 "vlucas/phpdotenv": "^5.0"
             },
             "require-dev": {
@@ -421,7 +421,7 @@
                     "helpers.php"
                 ],
                 "psr-4": {
-                    "KirbyExtended\\": "classes/KirbyExtended/"
+                    "KirbyHelpers\\": "classes/KirbyHelpers/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -436,33 +436,36 @@
                 }
             ],
             "description": "Dotenv support, meta tags generation and more for the Kirby CMS",
-            "homepage": "https://github.com/johannschopplich/kirby-extended#readme",
+            "homepage": "https://github.com/johannschopplich/kirby-helpers#readme",
             "keywords": [
                 "dotenv",
                 "env",
+                "getkirby",
                 "kirby",
+                "kirby-cms",
                 "meta",
                 "meta-tags",
-                "seo"
+                "seo",
+                "vite"
             ],
             "support": {
-                "issues": "https://github.com/johannschopplich/kirby-extended/issues",
-                "source": "https://github.com/johannschopplich/kirby-extended/tree/v2.11.3"
+                "issues": "https://github.com/johannschopplich/kirby-helpers/issues",
+                "source": "https://github.com/johannschopplich/kirby-helpers/tree/v3.0.2"
             },
-            "time": "2022-09-02T16:46:11+00:00"
+            "time": "2022-09-20T19:25:56+00:00"
         },
         {
             "name": "johannschopplich/kirby-plausible",
-            "version": "0.2.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-plausible.git",
-                "reference": "b0d615f5c1dc39e1562edc4ea02d2dad75fd01f7"
+                "reference": "2ca68a0e5204b934c68b85fda2233a229e7523b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/b0d615f5c1dc39e1562edc4ea02d2dad75fd01f7",
-                "reference": "b0d615f5c1dc39e1562edc4ea02d2dad75fd01f7",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/2ca68a0e5204b934c68b85fda2233a229e7523b0",
+                "reference": "2ca68a0e5204b934c68b85fda2233a229e7523b0",
                 "shasum": ""
             },
             "require": {
@@ -495,22 +498,22 @@
                 "plausible"
             ],
             "support": {
-                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.2.0"
+                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.3.1"
             },
-            "time": "2022-09-02T11:06:13+00:00"
+            "time": "2022-09-20T19:36:58+00:00"
         },
         {
             "name": "johannschopplich/kirby-punctuation-section",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-punctuation-section.git",
-                "reference": "a5408458758ea5b6f439ba71a45534aa5fdf9c79"
+                "reference": "249960f2449d8f05fd825034c451297ca61f0de6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/a5408458758ea5b6f439ba71a45534aa5fdf9c79",
-                "reference": "a5408458758ea5b6f439ba71a45534aa5fdf9c79",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/249960f2449d8f05fd825034c451297ca61f0de6",
+                "reference": "249960f2449d8f05fd825034c451297ca61f0de6",
                 "shasum": ""
             },
             "require": {
@@ -545,9 +548,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-punctuation-section/issues",
-                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.0.0"
+                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.0.1"
             },
-            "time": "2022-09-11T15:45:07+00:00"
+            "time": "2022-09-12T07:35:27+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
