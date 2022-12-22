@@ -1,13 +1,16 @@
 <template>
-  <section class="k-info-section">
-    <k-headline class="k-info-section-headline">
-      {{ headline }}
+  <section class="k-punctuation-section">
+    <k-headline class="k-punctuation-section-label">
+      {{ label }}
     </k-headline>
 
     <k-box :theme="theme">
       <k-text class="k-text-punctuation space-y-1">
         <k-grid v-for="(category, index) in text" :key="index">
-          <k-column :width="category.help ? '1/2' : '1/1'">
+          <k-column
+            :width="category.help ? '1/2' : '1/1'"
+            class="k-column-punctuation"
+          >
             <span class="k-text-punctuation-label">{{ category.label }}:</span>
             <div class="k-text-punctuation-group space-x-1">
               <button
@@ -43,12 +46,15 @@ export default {
   mixins: [SectionMixin],
 
   props: {
-    fieldsets: Object,
+    fieldsets: {
+      type: Object,
+      required: true,
+    },
   },
 
   data() {
     return {
-      headline: null,
+      label: null,
       text: [],
       theme: null,
       activeChar: null,
@@ -58,7 +64,7 @@ export default {
 
   async created() {
     const response = await this.load();
-    this.headline = response.headline;
+    this.label = response.label || response.headline;
     this.theme = response.theme || "none";
     this.text = this.fieldsets.map((i) => ({
       ...i,
@@ -99,12 +105,13 @@ export default {
 </script>
 
 <style>
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  margin-left: var(--spacing-1);
+.k-punctuation-section-label {
+  margin-bottom: var(--spacing-2);
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  margin-top: var(--spacing-1);
+.k-column-punctuation {
+  display: flex;
+  align-items: center;
 }
 
 .k-text-punctuation-label {
@@ -152,5 +159,13 @@ export default {
   .k-text-punctuation > .k-grid:not(:last-child) .k-text-punctuation-help {
     padding-bottom: 0;
   }
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: var(--spacing-1);
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: var(--spacing-1);
 }
 </style>

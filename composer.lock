@@ -601,16 +601,16 @@
         },
         {
             "name": "johannschopplich/kirby-punctuation-section",
-            "version": "2.1.2",
+            "version": "2.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-punctuation-section.git",
-                "reference": "c2ec9a0ac64b1c7575c57192f64f11ba8142be00"
+                "reference": "b40a079743129dc371c48b9bcb312f2d3c55b17d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/c2ec9a0ac64b1c7575c57192f64f11ba8142be00",
-                "reference": "c2ec9a0ac64b1c7575c57192f64f11ba8142be00",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/b40a079743129dc371c48b9bcb312f2d3c55b17d",
+                "reference": "b40a079743129dc371c48b9bcb312f2d3c55b17d",
                 "shasum": ""
             },
             "require": {
@@ -645,9 +645,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-punctuation-section/issues",
-                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.1.2"
+                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.1.9"
             },
-            "time": "2022-11-21T20:44:07+00:00"
+            "time": "2022-12-18T14:30:12+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
