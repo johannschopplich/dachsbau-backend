@@ -8,7 +8,7 @@ $eventHandler = function () {
     }
 
     try {
-        \Kirby\Http\Remote::request((string)$url, ['method' => 'POST']);
+        \Kirby\Http\Remote::request($url, ['method' => 'POST']);
     } catch (\Exception $e) {
         kirbylog("Request to {$url} failed", 'error');
         kirbylog($e->getMessage(), 'error');
