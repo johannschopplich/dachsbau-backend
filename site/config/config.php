@@ -12,6 +12,8 @@ return [
 
     'date.handler' => 'intl',
 
+    'hooks' => require __DIR__ . '/hooks.php',
+
     'cache' => [
         'pages' => [
             'active' => env('KIRBY_CACHE', false),
