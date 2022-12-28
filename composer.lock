@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c84408d61596dbb237ac270f371a90e7",
+    "content-hash": "04f927f3f5ae172948389cca88396070",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -697,6 +697,57 @@
                 "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.1.10"
             },
             "time": "2022-12-25T16:00:05+00:00"
+        },
+        {
+            "name": "johannschopplich/kirbylog",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johannschopplich/kirbylog.git",
+                "reference": "f69988caa5c2b4b298e2de81ccafecd0539a8159"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johannschopplich/kirbylog/zipball/f69988caa5c2b4b298e2de81ccafecd0539a8159",
+                "reference": "f69988caa5c2b4b298e2de81ccafecd0539a8159",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "@stable",
+                "getkirby/cms": "^3.8",
+                "phpunit/phpunit": "^9"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": "tests/fixtures/kirby"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johann Schopplich",
+                    "email": "pkg@johannschopplich.com",
+                    "homepage": "https://johannschopplich.com"
+                }
+            ],
+            "description": "Zero-dependency global `kirbylog()` helper for any content",
+            "homepage": "https://github.com/johannschopplich/kirbylog#readme",
+            "keywords": [
+                "getkirby",
+                "kirby",
+                "log",
+                "logger"
+            ],
+            "support": {
+                "issues": "https://github.com/johannschopplich/kirbylog/issues",
+                "source": "https://github.com/johannschopplich/kirbylog/tree/v1.4.4"
+            },
+            "time": "2022-12-28T18:44:10+00:00"
         },
         {
             "name": "laminas/laminas-escaper",

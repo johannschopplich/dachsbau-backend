@@ -6,7 +6,8 @@
     "johannschopplich/kirby-helpers": "^3.0",
     "johannschopplich/kirby-punctuation-section": "^2.0",
     "johannschopplich/kirby-plausible": "^0.3",
-    "johannschopplich/kirby-headless": "^1.0"
+    "johannschopplich/kirby-headless": "^1.0",
+    "johannschopplich/kirbylog": "^1.4"
   },
   "scripts": {
     "start": [
