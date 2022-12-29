@@ -699,16 +699,16 @@
         },
         {
             "name": "johannschopplich/kirbylog",
-            "version": "1.4.4",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirbylog.git",
-                "reference": "f69988caa5c2b4b298e2de81ccafecd0539a8159"
+                "reference": "e134cf9048f6b73471b9d6288c444b5c80d22929"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirbylog/zipball/f69988caa5c2b4b298e2de81ccafecd0539a8159",
-                "reference": "f69988caa5c2b4b298e2de81ccafecd0539a8159",
+                "url": "https://api.github.com/repos/johannschopplich/kirbylog/zipball/e134cf9048f6b73471b9d6288c444b5c80d22929",
+                "reference": "e134cf9048f6b73471b9d6288c444b5c80d22929",
                 "shasum": ""
             },
             "require": {
@@ -744,9 +744,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirbylog/issues",
-                "source": "https://github.com/johannschopplich/kirbylog/tree/v1.4.4"
+                "source": "https://github.com/johannschopplich/kirbylog/tree/v1.4.6"
             },
-            "time": "2022-12-28T18:44:10+00:00"
+            "time": "2022-12-29T16:17:55+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
