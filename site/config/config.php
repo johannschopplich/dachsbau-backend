@@ -12,7 +12,9 @@ return [
 
     'date.handler' => 'intl',
 
-    'hooks' => require __DIR__ . '/hooks.php',
+    // TODO: Enable build trigger again when Netlify trailing slash
+    // issues are resolved
+    // 'hooks' => require __DIR__ . '/hooks.php',
 
     'cache' => [
         'pages' => [
