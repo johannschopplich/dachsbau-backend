@@ -11,9 +11,6 @@ class Api
 {
     /**
      * Create an API handler
-     *
-     * @param callable[] $fns
-     * @return mixed
      */
     public static function createHandler(callable ...$fns)
     {
@@ -37,10 +34,6 @@ class Api
     /**
      * Create an API response
      * Enforces consistent JSON responses by wrapping Kirby's `Response` class
-     *
-     * @param int $code
-     * @param mixed $data
-     * @return \Kirby\Http\Response
      */
     public static function createResponse(int $code, $data = null): Response
     {
@@ -54,16 +47,14 @@ class Api
         }
 
         return Response::json($body, $code, null, [
-            'Access-Control-Allow-Origin' => env('KIRBY_HEADLESS_ALLOW_ORIGIN', '*')
+            'Access-Control-Allow-Origin' => kirby()->option('headless.cors.allowOrigin', '*')
         ]);
     }
 
     /**
      * Get the status message for the given code
      *
-     * @param int $code
-     * @return string
-     * @throws Exception
+     * @throws \Exception
      */
     private static function getStatusMessage(int $code): string
     {
@@ -90,16 +81,16 @@ class Api
 
     /**
      * Respond to CORS preflight requests
-     *
-     * @return \Kirby\Http\Response
      */
-    public static function createPreflightResponse(): \Kirby\Http\Response
+    public static function createPreflightResponse(): Response
     {
+        $kirby = kirby();
+
         return new Response('', null, 204, [
-            'Access-Control-Allow-Origin' => env('KIRBY_HEADLESS_ALLOW_ORIGIN', '*'),
-            'Access-Control-Allow-Methods' => env('KIRBY_HEADLESS_ALLOW_METHODS', 'GET, POST, OPTIONS'),
-            'Access-Control-Allow-Headers' => '*',
-            'Access-Control-Max-Age' => '86400'
+            'Access-Control-Allow-Origin' => $kirby->option('headless.cors.allowOrigin', '*'),
+            'Access-Control-Allow-Methods' => $kirby->option('headless.cors.allowMethods', 'GET, POST, OPTIONS'),
+            'Access-Control-Allow-Headers' => $kirby->option('headless.cors.allowHeaders', '*'),
+            'Access-Control-Max-Age' => $kirby->option('headless.cors.maxAge', '86400'),
             // 204 responses **must not** have a `Content-Length` header
             // (https://www.rfc-editor.org/rfc/rfc7230#section-3.3.2)
         ]);

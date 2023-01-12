@@ -11,8 +11,6 @@ class Middlewares
 {
     /**
      * Try to resolve page and site files
-     *
-     * @return \Kirby\Cms\File|void
      */
     public static function tryResolveFiles(array $context, array $args)
     {
@@ -46,20 +44,22 @@ class Middlewares
 
     /**
      * Try to resolve global site data
-     *
-     * @return \Kirby\Http\Response|void
      */
     public static function tryResolveSite(array $context, array $args)
     {
+        $kirby = kirby();
+        $cache = $cacheKey = $data = null;
+
         // The `$args` array contains the route parameters
-        [$path] = $args;
+        if ($kirby->multilang()) {
+            [$languageCode, $path] = $args;
+        } else {
+            [$path] = $args;
+        }
 
         if ($path !== '_site') {
             return;
         }
-
-        $kirby = kirby();
-        $cache = $cacheKey = $data = null;
 
         // Try to get the site data from cache
         $cache = $kirby->cache('pages');
@@ -90,14 +90,18 @@ class Middlewares
 
     /**
      * Try to resolve the page id
-     *
-     * @return \Kirby\Http\Response|void
      */
     public static function tryResolvePage(array $context, array $args)
     {
-        // The `$args` array contains the route parameters
-        [$path] = $args;
         $kirby = kirby();
+        $cache = $cacheKey = $data = null;
+
+        // The `$args` array contains the route parameters
+        if ($kirby->multilang()) {
+            [$languageCode, $path] = $args;
+        } else {
+            [$path] = $args;
+        }
 
         // Fall back to homepage id
         if (empty($path)) {
@@ -110,8 +114,6 @@ class Middlewares
                 $page = $kirby->site()->errorPage();
             }
         }
-
-        $cache = $cacheKey = $data = null;
 
         // Try to get the page from cache
         if ($page->isCacheable()) {
@@ -143,17 +145,15 @@ class Middlewares
     /**
      * Checks if a bearer token was sent with the request and
      * if it matches the one configured in `.env`
-     *
-     * @return \Kirby\Http\Response|void
      */
     public static function hasBearerToken()
     {
         $kirby = kirby();
-        $token = env('KIRBY_HEADLESS_API_TOKEN');
+        $token = $kirby->option('headless.token');
         $authorization = $kirby->request()->header('Authorization');
 
-        if ($kirby->option('headless.autoPanelRedirect', false) && empty($authorization)) {
-            go(option('panel.slug'));
+        if ($kirby->option('headless.panel.redirect', false) && empty($authorization)) {
+            go($kirby->option('panel.slug'));
         }
 
         if (
@@ -166,8 +166,6 @@ class Middlewares
 
     /**
      * Checks if a body was sent with the request
-     *
-     * @return \Kirby\Http\Response|array
      */
     public static function hasBody(array $context)
     {
@@ -175,7 +173,7 @@ class Middlewares
 
         if (empty($body)) {
             return Api::createResponse(400, [
-                'error' => 'No data was sent with the request'
+                'error' => 'No body was sent with the request'
             ]);
         }
 
