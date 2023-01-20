@@ -11,10 +11,10 @@ options:
 sections:
   drafts:
     extends: sections/badgers
-    headline: Entwürfe
+    label: Entwürfe
     status: draft
 
   listed:
     extends: sections/badgers
-    headline: Veröffentlichte Angebote
+    label: Veröffentlichte Angebote
     status: listed

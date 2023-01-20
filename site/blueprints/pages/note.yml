@@ -36,11 +36,12 @@ columns:
           categories:
             label: Kategorie
             type: select
-            options: query
-            query:
-              fetch: page.parent.categories.toStructure
-              text: "{{ structureItem.title }}"
-              value: "{{ structureItem.title }}"
+            options:
+              type: query
+              query:
+                fetch: page.parent.categories.toStructure
+                text: "{{ structureItem.title }}"
+                value: "{{ structureItem.title }}"
           description: fields/description
       images: sections/images
       helpers: sections/punctuation

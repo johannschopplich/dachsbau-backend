@@ -1,5 +1,5 @@
 type: pages
-headline: Beiträge
+label: Beiträge
 parent: kirby.page("blog")
 template: note
 sortBy: date desc

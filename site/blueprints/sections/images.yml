@@ -1,5 +1,5 @@
 type: files
-headline: Bilder
+label: Bilder
 template: image
 sortBy: filename desc
 empty: Noch keine Bilder

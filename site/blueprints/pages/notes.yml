@@ -21,19 +21,19 @@ tabs:
         sections:
           drafts:
             extends: sections/notes
-            headline: Entwürfe
+            label: Entwürfe
             status: draft
 
           unlisted:
             extends: sections/notes
-            headline: In Überprüfung
+            label: In Überprüfung
             status: unlisted
 
       - width: 2/3
         sections:
           listed:
             extends: sections/notes
-            headline: Veröffentlicht
+            label: Veröffentlicht
             status: listed
             size: small
             layout: cards

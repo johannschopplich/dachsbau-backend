@@ -18,7 +18,7 @@ tabs:
 
           pages:
             type: pages
-            headline: Seiten
+            label: Seiten
             create: default
             templates:
               - about

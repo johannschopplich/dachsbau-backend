@@ -1,5 +1,5 @@
 type: pages
-headline: Angebote
+label: Angebote
 parent: kirby.page("angebote")
 template: badger
 empty: Noch keine Angebote
