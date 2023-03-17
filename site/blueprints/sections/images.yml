@@ -1,5 +1,7 @@
 type: files
 label: Bilder
 template: image
+uploads:
+  template: image
 sortBy: filename desc
 empty: Noch keine Bilder
