@@ -4,7 +4,7 @@
 
 This website is intended as the backend for the Nuxt 3 frontend. If the URL is called and no `Authentication` header is sent with the requerst, the user will automatically forwarded to the Kirby Panel.
 
-👉 See the [dachsbau-frontend](https://github.com/johannschopplich/dachsbau-frontend) repository for the whole frontend code!
+👉 See the [Dachsbau Frontend](https://github.com/johannschopplich/dachsbau-frontend) repository for the whole frontend code!
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Optionally, adapt it's values.
 
 ## Usage
 
-See the [dachsbau-frontend](https://github.com/johannschopplich/dachsbau-frontend) repository.
+See the [Dachsbau Frontend](https://github.com/johannschopplich/dachsbau-frontend) repository.
 
 ### Deployment
 
@@ -44,4 +44,4 @@ See the [dachsbau-frontend](https://github.com/johannschopplich/dachsbau-fronten
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [Johann Schopplich](https://github.com/johannschopplich)
+[MIT](./LICENSE) License © 2022-present [Johann Schopplich](https://github.com/johannschopplich)
