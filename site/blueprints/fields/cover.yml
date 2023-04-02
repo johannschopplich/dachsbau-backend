@@ -1,7 +1,7 @@
 label: Vorschaubild
 type: files
 multiple: false
-query: page.images.template('image')
+query: page.files.template("image")
 uploads:
   template: image
 help: Ein Vorschaubild für die Seite, das in Suchmaschinen und sozialen Netzwerken angezeigt wird.

@@ -48,5 +48,5 @@ tabs:
             fields:
               cover:
                 extends: fields/cover
-                query: site.images.template('image')
+                query: site.files.template("image")
               description: fields/description

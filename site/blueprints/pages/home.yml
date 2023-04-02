@@ -21,7 +21,7 @@ columns:
             label: Einstiegsbild
             type: files
             multiple: false
-            query: page.images.template('image')
+            query: page.files.template("image")
             uploads:
               template: image
             width: 1/3
