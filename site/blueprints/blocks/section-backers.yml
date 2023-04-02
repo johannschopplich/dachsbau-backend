@@ -1,0 +1,32 @@
+name: "Freund*innen"
+icon: image
+preview: fields
+wysiwyg: true
+fields:
+  backers:
+    label: "Freund*innen"
+    type: structure
+    columns:
+      title: true
+      text: true
+      logo: true
+    fields:
+      title:
+        label: Titel
+        type: text
+        width: 1/2
+      website:
+        label: Website
+        type: url
+        width: 1/2
+      text:
+        label: Text
+        type: writer
+        inline: true
+      logo:
+        label: Logo
+        type: files
+        multiple: false
+        query: page.files.template("image")
+        uploads:
+          template: image

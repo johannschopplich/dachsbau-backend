@@ -19,9 +19,8 @@ fieldsets:
       - image
       # - gallery
       - video
-  code:
-    label: Code
+  sections:
+    label: Sektionen
     type: group
     fieldsets:
-      - code
-      - markdown
+      - section-backers

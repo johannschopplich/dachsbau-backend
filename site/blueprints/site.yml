@@ -22,7 +22,6 @@ tabs:
             create: default
             templates:
               - about
-              - backers
               - default
               - error
               - home
