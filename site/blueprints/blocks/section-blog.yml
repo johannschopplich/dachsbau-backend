@@ -1,0 +1,9 @@
+name: Blogartikel
+icon: grid
+preview: fields
+wysiwyg: true
+fields:
+  info:
+    label: Info
+    type: info
+    text: Dieser Block zeigt die neuesten Blogartikel an.

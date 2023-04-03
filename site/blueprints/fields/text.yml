@@ -1,4 +1,4 @@
-label: Text
+label: Blöcke
 type: blocks
 fieldsets:
   text:
@@ -24,3 +24,4 @@ fieldsets:
     type: group
     fieldsets:
       - section-backers
+      - section-blog
