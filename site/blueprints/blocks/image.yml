@@ -39,9 +39,7 @@ fields:
     type: text
     icon: url
   properties:
-    label:
-      de: Eigenschaften
-      en: Properties
+    label: Eigenschaften
     type: toggles
     grow: false
     options:
