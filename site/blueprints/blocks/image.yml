@@ -38,7 +38,7 @@ fields:
     label: field.blocks.image.link
     type: text
     icon: url
-  properties:
+  size:
     label: Eigenschaften
     type: toggles
     grow: false
