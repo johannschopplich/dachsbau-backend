@@ -46,7 +46,7 @@ fields:
       - value: normal
         text: Normal
         icon: wand
-      - value: outset
+      - value: emphasized
         text: Hervorgehoben
         icon: grid-bottom
       - value: pulled-left
