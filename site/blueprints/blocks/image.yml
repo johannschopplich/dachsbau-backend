@@ -41,7 +41,6 @@ fields:
   size:
     label: Größe
     type: toggles
-    grow: false
     options:
       - value: normal
         text: Normal
