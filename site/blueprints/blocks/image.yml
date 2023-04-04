@@ -41,10 +41,11 @@ fields:
   size:
     label: Größe
     type: toggles
+    default: normal
     options:
       - value: normal
         text: Normal
-        icon: image
+        icon: wand
       - value: outset
         text: Hervorgehoben
         icon: grid-bottom
