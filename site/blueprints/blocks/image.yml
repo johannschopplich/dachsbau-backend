@@ -39,10 +39,13 @@ fields:
     type: text
     icon: url
   size:
-    label: Eigenschaften
+    label: Größe
     type: toggles
     grow: false
     options:
+      - value: normal
+        text: Normal
+        icon: image
       - value: outset
         text: Hervorgehoben
         icon: grid-bottom
