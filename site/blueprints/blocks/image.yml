@@ -38,3 +38,19 @@ fields:
     label: field.blocks.image.link
     type: text
     icon: url
+  properties:
+    label:
+      de: Eigenschaften
+      en: Properties
+    type: toggles
+    grow: false
+    options:
+      - value: outset
+        text: Hervorgehoben
+        icon: grid-bottom
+      - value: pulled-left
+        text: Linksbündig
+        icon: grid-left
+      - value: pulled-right
+        text: Rechtsbündig
+        icon: grid-right
