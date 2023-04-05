@@ -12,9 +12,8 @@ return [
 
     'date.handler' => 'intl',
 
-    // TODO: Enable build trigger again when Netlify trailing slash
-    // issues are resolved
-    // 'hooks' => require __DIR__ . '/hooks.php',
+    // Netlify build trigger
+    'hooks' => require __DIR__ . '/hooks.php',
 
     'cache' => [
         'pages' => [
@@ -39,7 +38,6 @@ return [
     'kql' => [
         'auth' => 'bearer'
     ],
-
 
     // Kirby headless options
     'headless' => [
