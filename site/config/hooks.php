@@ -2,7 +2,7 @@
 
 return [
     // Trigger Netlify build after site or page is updated
-    '*.*.after' => function (\Kirby\Cms\Event $event) {
+    '*:after' => function (\Kirby\Cms\Event $event) {
         if (!in_array($event->type(), ['site', 'page'])) {
             return;
         }
