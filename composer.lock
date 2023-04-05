@@ -603,23 +603,24 @@
         },
         {
             "name": "johannschopplich/kirby-plausible",
-            "version": "0.3.4",
+            "version": "0.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-plausible.git",
-                "reference": "33f708c74f4cfe284ca8ccb813f0c5cb97611076"
+                "reference": "9cee0845d3e8c9c3e1e81f408c9a81d168a6431a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/33f708c74f4cfe284ca8ccb813f0c5cb97611076",
-                "reference": "33f708c74f4cfe284ca8ccb813f0c5cb97611076",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/9cee0845d3e8c9c3e1e81f408c9a81d168a6431a",
+                "reference": "9cee0845d3e8c9c3e1e81f408c9a81d168a6431a",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2"
             },
             "require-dev": {
-                "getkirby/cms": "^3.8"
+                "friendsofphp/php-cs-fixer": "@stable",
+                "getkirby/cms": "^3.9"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -646,31 +647,30 @@
                 "plausible"
             ],
             "support": {
-                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.3.4"
+                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.3.6"
             },
-            "time": "2022-12-28T14:28:09+00:00"
+            "time": "2023-04-05T08:36:47+00:00"
         },
         {
             "name": "johannschopplich/kirby-punctuation-section",
-            "version": "2.1.10",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-punctuation-section.git",
-                "reference": "9d48cf1975526ada98407e1e8bb7f04b2054a986"
+                "reference": "75f49396111a9dcbd51327d58bb02cbe6772092e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/9d48cf1975526ada98407e1e8bb7f04b2054a986",
-                "reference": "9d48cf1975526ada98407e1e8bb7f04b2054a986",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/75f49396111a9dcbd51327d58bb02cbe6772092e",
+                "reference": "75f49396111a9dcbd51327d58bb02cbe6772092e",
                 "shasum": ""
             },
             "require": {
-                "getkirby/composer-installer": "^1.2",
-                "php": ">=8.0.0"
+                "getkirby/composer-installer": "^1.2"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "@stable",
-                "getkirby/cms": "^3.8"
+                "getkirby/cms": "^3.9"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -697,9 +697,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-punctuation-section/issues",
-                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.1.10"
+                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v2.2.0"
             },
-            "time": "2022-12-25T16:00:05+00:00"
+            "time": "2023-04-05T08:41:03+00:00"
         },
         {
             "name": "johannschopplich/kirbylog",
