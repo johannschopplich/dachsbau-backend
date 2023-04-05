@@ -10,7 +10,7 @@ return [
         'language' => 'de'
     ],
 
-    'date.handler' => 'intl',
+    // 'date.handler' => 'intl',
 
     // Netlify build trigger
     'hooks' => require __DIR__ . '/hooks.php',
