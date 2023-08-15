@@ -11,8 +11,6 @@ return [
         'language' => 'de'
     ],
 
-    // 'date.handler' => 'intl',
-
     // Netlify build trigger
     'hooks' => require __DIR__ . '/hooks.php',
 
@@ -24,7 +22,11 @@ return [
     ],
 
     'thumbs' => [
-        'quality' => '80',
+        'format' => 'webp',
+        'quality' => 80,
+        'presets' => [
+            'default' => ['format' => 'webp', 'quality' => 80],
+        ],
         'srcsets' => [
             'default' => [360, 720, 1024, 1280, 1536]
         ]
