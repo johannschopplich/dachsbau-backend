@@ -48,9 +48,10 @@ tabs:
 
       - width: 1/2
         sections:
-          categories:
+          fields:
             type: fields
             fields:
+              description: fields/description
               categories:
                 label: Kategorien
                 type: structure
@@ -59,5 +60,4 @@ tabs:
                   title:
                     label: Titel
                     type: text
-          description: sections/description
 

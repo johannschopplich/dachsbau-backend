@@ -11,9 +11,7 @@ fieldsets:
       - quote
       - line
   media:
-    label:
-      de: Medien
-      en: Media
+    label: Medien
     type: group
     fieldsets:
       - image
