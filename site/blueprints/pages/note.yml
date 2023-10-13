@@ -18,7 +18,6 @@ status:
 options:
   preview: "{{ page.frontendUrl }}"
 
-
 tabs:
   pages:
     label: Seite
