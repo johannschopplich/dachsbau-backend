@@ -12,7 +12,9 @@ columns:
 
   - width: 1/3
     sections:
-      cover: sections/cover
-      description: sections/description
+      meta:
+        type: fields
+        fields:
+          cover: fields/cover
+          description: fields/description
       images: sections/images
-      helpers: sections/punctuation

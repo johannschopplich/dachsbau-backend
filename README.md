@@ -1,6 +1,7 @@
 # Dachsbau Backend
 
-> ℹ️ Forked from [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter). All of the features and settings apply here as well.
+> [!NOTE]
+> Forked from [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter). All of the features and settings apply here as well.
 
 This website is intended as the backend for the Nuxt 3 frontend. If the URL is called and no `Authentication` header is sent with the requerst, the user will automatically forwarded to the Kirby Panel.
 
@@ -8,7 +9,7 @@ This website is intended as the backend for the Nuxt 3 frontend. If the URL is c
 
 ## Prerequisites
 
-- PHP 8.0+
+- PHP 8.1+
 
 > Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
 
@@ -44,4 +45,4 @@ See the [Dachsbau Frontend](https://github.com/johannschopplich/dachsbau-fronten
 
 ## License
 
-[MIT](./LICENSE) License © 2022-present [Johann Schopplich](https://github.com/johannschopplich)
+[MIT](./LICENSE) License © 2022-PRESENT [Johann Schopplich](https://github.com/johannschopplich)

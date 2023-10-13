@@ -4,4 +4,4 @@ multiple: false
 query: page.files.template("image")
 uploads:
   template: image
-help: Ein Vorschaubild für die Seite, das in Suchmaschinen und sozialen Netzwerken angezeigt wird.
+help: Ein Vorschaubild für Suchmaschinen und sozialen Netzwerke.

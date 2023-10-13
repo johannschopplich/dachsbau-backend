@@ -1,4 +1,4 @@
 label: Beschreibung
 type: textarea
 buttons: false
-help: Eine kurze Beschreibung der Seite, die von Suchmaschinen unter dem Titel angezeigt wird.
+help: Eine kurze Beschreibung für Suchmaschinen.

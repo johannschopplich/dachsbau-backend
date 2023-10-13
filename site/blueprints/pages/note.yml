@@ -18,29 +18,49 @@ status:
 options:
   preview: "{{ page.frontendUrl }}"
 
-columns:
-  - width: 2/3
-    sections:
-      text: sections/text
 
-  - width: 1/3
-    sections:
-      meta:
-        type: fields
-        fields:
-          cover: fields/cover
-          date:
-            label: Datum
-            type: date
-            default: today
-          categories:
-            label: Kategorie
-            type: select
-            options:
-              type: query
-              query: page.parent.categories.toStructure
-              text: "{{ structureItem.title }}"
-              value: "{{ structureItem.title }}"
-          description: fields/description
-      images: sections/images
-      helpers: sections/punctuation
+tabs:
+  pages:
+    label: Seite
+    icon: draft
+    columns:
+      - width: 2/3
+        sections:
+          info:
+            type: fields
+            fields:
+              cover:
+                extends: fields/cover
+                width: 1/2
+              date:
+                label: Datum
+                type: date
+                default: today
+                width: 1/2
+              # categories:
+              #   label: Kategorie
+              #   type: select
+              #   options:
+              #     type: query
+              #     query: page.parent.categories.toStructure
+              #     text: "{{ structureItem.title }}"
+              #     value: "{{ structureItem.title }}"
+              #   width: 1/3
+
+      - width: 1/3
+        sections:
+          meta:
+            type: fields
+            fields:
+              description: fields/description
+
+      - width: 2/3
+        sections:
+          text: sections/text
+
+      - width: 1/3
+        sticky: true
+        sections:
+          punctuation: sections/punctuation
+
+  images: tabs/images
