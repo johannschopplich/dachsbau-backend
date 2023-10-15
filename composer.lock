@@ -677,16 +677,16 @@
         },
         {
             "name": "johannschopplich/kirby-punctuation-section",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-punctuation-section.git",
-                "reference": "443ab448971fb1f5c524d6ca2b9cdf56a28cfebb"
+                "reference": "0f4651a3835b1f0b77a67783efd6bfbc24447692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/443ab448971fb1f5c524d6ca2b9cdf56a28cfebb",
-                "reference": "443ab448971fb1f5c524d6ca2b9cdf56a28cfebb",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/0f4651a3835b1f0b77a67783efd6bfbc24447692",
+                "reference": "0f4651a3835b1f0b77a67783efd6bfbc24447692",
                 "shasum": ""
             },
             "require": {
@@ -721,9 +721,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-punctuation-section/issues",
-                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v3.0.1"
+                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v3.0.2"
             },
-            "time": "2023-10-12T18:17:44+00:00"
+            "time": "2023-10-15T13:48:44+00:00"
         },
         {
             "name": "johannschopplich/kirbylog",
