@@ -1,7 +1,7 @@
 # Dachsbau Backend
 
 > [!NOTE]
-> Forked from [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter). All of the features and settings apply here as well.
+> Forked from [🍫 Cacao Kit Backend](https://github.com/johannschopplich/cacao-kit-backend). All of the features and settings apply here as well.
 
 This website is intended as the backend for the Nuxt 3 frontend. If the URL is called and no `Authentication` header is sent with the requerst, the user will automatically forwarded to the Kirby Panel.
 
@@ -11,7 +11,7 @@ This website is intended as the backend for the Nuxt 3 frontend. If the URL is c
 
 - PHP 8.1+
 
-> Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
+Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
 
 ## Setup
 
@@ -39,9 +39,10 @@ See the [Dachsbau Frontend](https://github.com/johannschopplich/dachsbau-fronten
 
 ### Deployment
 
-> ℹ️ See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for exemplary deployment instructions.
-
-> ℹ️ Some hosting environments require to uncomment `RewriteBase /` in [`.htaccess`](public/.htaccess) to make site links work.
+> [!NOTE]
+> See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for exemplary deployment instructions.
+>
+> Some hosting environments require to uncomment `RewriteBase /` in [`.htaccess`](public/.htaccess) to make site links work.
 
 ## License
 
