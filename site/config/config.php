@@ -3,7 +3,13 @@
 return [
 
     'debug' => env('KIRBY_DEBUG', false),
-    'yaml.handler' => 'symfony',
+
+    'yaml' => [
+        'handler' => 'symfony'
+    ],
+    'date' => [
+        'handler' => 'intl'
+    ],
 
     'panel' => [
         'install' => env('KIRBY_PANEL_INSTALL', false),
