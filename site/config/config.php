@@ -18,7 +18,7 @@ return [
     ],
 
     // Netlify build trigger
-    'hooks' => require __DIR__ . '/hooks.php',
+    // 'hooks' => require __DIR__ . '/hooks.php',
 
     'cache' => [
         'pages' => [
@@ -41,6 +41,14 @@ return [
     // Default to token-based authentication
     'kql' => [
         'auth' => 'bearer'
+    ],
+
+    'blocksResolver' => [
+        'resolvers' => [
+            'text:text' => function (\Kirby\Content\Field $field, \Kirby\Cms\Block $block) {
+                return $field->permalinksToUrls()->value();
+            }
+        ]
     ],
 
     // Kirby headless options

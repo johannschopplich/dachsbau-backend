@@ -9,7 +9,7 @@ This website is intended as the backend for the Nuxt 3 frontend. If the URL is c
 
 ## Prerequisites
 
-- PHP 8.1+
+- PHP 8.2+
 
 Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
 
