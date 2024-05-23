@@ -17,9 +17,6 @@ return [
         'language' => 'de'
     ],
 
-    // Netlify build trigger
-    // 'hooks' => require __DIR__ . '/hooks.php',
-
     'cache' => [
         'pages' => [
             'active' => env('KIRBY_CACHE', false),
