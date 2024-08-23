@@ -4,7 +4,7 @@ use Kirby\Cms\Block;
 use Kirby\Content\Field;
 
 return [
-    // Custom resolves for `block:field`
+    'resolvedKey' => 'resolved',
     'resolvers' => [
         'text:text' => function (Field $field, Block $block) {
             return $field->permalinksToUrls()->value();
