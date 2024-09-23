@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.11.0",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier \"**/*.{css,html,js,json,md,ts,vue,yml}\" --write",
+    "format:check": "prettier \"**/*.{css,html,js,json,md,ts,vue,yml}\" --check"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.7.1",
+    "eslint": "^9.11.0",
+    "prettier": "^3.3.3"
+  }
+}
