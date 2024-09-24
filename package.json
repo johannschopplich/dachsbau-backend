@@ -3,6 +3,7 @@
   "private": true,
   "packageManager": "pnpm@9.11.0",
   "scripts": {
+    "build": "echo \"No build step\"",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier \"**/*.{css,html,js,json,md,ts,vue,yml}\" --write",
