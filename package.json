@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@10.5.2",
   "scripts": {
     "build": "echo \"No build step\"",
     "lint": "eslint .",
@@ -10,8 +10,8 @@
     "format:check": "prettier \"**/*.{css,html,js,json,md,ts,vue,yml}\" --check"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.7.1",
-    "eslint": "^9.11.0",
-    "prettier": "^3.3.3"
+    "@antfu/eslint-config": "^4.3.0",
+    "eslint": "^9.21.0",
+    "prettier": "^3.5.2"
   }
 }

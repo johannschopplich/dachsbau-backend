@@ -57,9 +57,4 @@ tabs:
         sections:
           text: sections/text
 
-      - width: 1/3
-        sticky: true
-        sections:
-          punctuation: sections/punctuation
-
   images: tabs/images
