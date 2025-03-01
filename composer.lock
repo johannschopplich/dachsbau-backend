@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7153c93fe05ea87dcf187af9d202fdb",
+    "content-hash": "839b125574ae44c3b85bb61b61294600",
     "packages": [
         {
             "name": "christian-riesen/base32",
@@ -607,105 +607,6 @@
                 }
             ],
             "time": "2024-11-21T10:41:30+00:00"
-        },
-        {
-            "name": "johannschopplich/kirby-plausible",
-            "version": "0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johannschopplich/kirby-plausible.git",
-                "reference": "cad06a39e4ca5cf3823882cb51e3b0bc2ee4ff1d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-plausible/zipball/cad06a39e4ca5cf3823882cb51e3b0bc2ee4ff1d",
-                "reference": "cad06a39e4ca5cf3823882cb51e3b0bc2ee4ff1d",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.2"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "@stable",
-                "getkirby/cms": "^4"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "kirby-cms-path": false
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Johann Schopplich",
-                    "email": "pkg@johannschopplich.com",
-                    "homepage": "https://johannschopplich.com"
-                }
-            ],
-            "description": "Plausible integration for Kirby CMS",
-            "homepage": "https://github.com/johannschopplich/kirby-plausible#readme",
-            "keywords": [
-                "analytics",
-                "getkirby",
-                "kirby",
-                "kirby-cms",
-                "plausible"
-            ],
-            "support": {
-                "source": "https://github.com/johannschopplich/kirby-plausible/tree/v0.5.0"
-            },
-            "time": "2024-02-05T12:29:44+00:00"
-        },
-        {
-            "name": "johannschopplich/kirby-punctuation-section",
-            "version": "3.0.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johannschopplich/kirby-punctuation-section.git",
-                "reference": "b533ef5345877a13c681c90b3efe3b7ffabdaa3d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-punctuation-section/zipball/b533ef5345877a13c681c90b3efe3b7ffabdaa3d",
-                "reference": "b533ef5345877a13c681c90b3efe3b7ffabdaa3d",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.2"
-            },
-            "require-dev": {
-                "getkirby/cms": "^4"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "kirby-cms-path": false
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Johann Schopplich",
-                    "email": "hello@johannschopplich.com",
-                    "homepage": "https://johannschopplich.com"
-                }
-            ],
-            "description": "Insert punctuation marks into your text with a single click",
-            "homepage": "https://github.com/johannschopplich/kirby-punctuation-section#readme",
-            "keywords": [
-                "clipboard",
-                "kirby",
-                "punctuation",
-                "typography"
-            ],
-            "support": {
-                "issues": "https://github.com/johannschopplich/kirby-punctuation-section/issues",
-                "source": "https://github.com/johannschopplich/kirby-punctuation-section/tree/v3.0.14"
-            },
-            "time": "2024-09-12T14:13:08+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
