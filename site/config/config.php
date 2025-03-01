@@ -23,7 +23,7 @@ return [
     'cache' => [
         'pages' => [
             'active' => env('KIRBY_CACHE', false),
-            'ignore' => fn (Page $page) => $page->kirby()->user() !== null
+            'ignore' => fn(Page $page) => $page->kirby()->user() !== null
         ]
     ],
 
@@ -38,26 +38,18 @@ return [
         ]
     ],
 
-    // Default to token-based authentication
     'kql' => [
         'auth' => 'bearer'
     ],
 
-    // Blocks resolver configuration
     // See: https://github.com/johannschopplich/kirby-headless#toresolvedblocks
     'blocksResolver' => require __DIR__ . '/blocks-resolver.php',
 
     'headless' => [
-        // Enable returning Kirby templates as JSON
-        'globalRoutes' => true,
-
-        // Optional API token to use for authentication, also used
-        // for for KQL endpoint
         'token' => env('KIRBY_HEADLESS_API_TOKEN'),
 
         'panel' => [
-            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL'),
-            'redirect' => true
+            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL')
         ],
 
         'cors' => [
