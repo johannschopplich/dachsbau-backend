@@ -25,21 +25,17 @@ tabs:
     columns:
       - width: 2/3
         sections:
-          info:
+          text: sections/text
+
+      - width: 1/3
+        sections:
+          sidebar:
             type: fields
             fields:
-              cover:
-                extends: fields/cover
-                width: 2/3
               date:
                 label: Datum
                 type: date
                 default: today
-                width: 1/3
-
-      - width: 2/3
-        sections:
-          text: sections/text
 
   seo:
     label: SEO
