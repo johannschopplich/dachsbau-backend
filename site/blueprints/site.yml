@@ -45,6 +45,7 @@ tabs:
           meta:
             type: fields
             fields:
+              customTitle: fields/customTitle
               cover:
                 extends: fields/cover
                 query: site.files.template("image")

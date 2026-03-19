@@ -7,8 +7,10 @@ options:
   delete: false
   preview: "{{ page.frontendUrl }}"
 
-columns:
-  - width: 2/3
+tabs:
+  content:
+    label: Inhalt
+    icon: draft
     sections:
       main:
         type: fields
@@ -28,7 +30,10 @@ columns:
             type: writer
             inline: true
 
-  - width: 1/3
+  seo:
+    label: SEO
+    icon: search
     sections:
-      cover: sections/cover
-      images: sections/images
+      meta: sections/meta
+
+  images: tabs/images

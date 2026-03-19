@@ -5,16 +5,17 @@ icon: 📝
 options:
   preview: "{{ page.frontendUrl }}"
 
-columns:
-  - width: 2/3
+tabs:
+  content:
+    label: Inhalt
+    icon: draft
     sections:
       text: sections/text
 
-  - width: 1/3
+  seo:
+    label: SEO
+    icon: search
     sections:
-      meta:
-        type: fields
-        fields:
-          description: fields/description
-          cover: fields/cover
-      images: sections/images
+      meta: sections/meta
+
+  images: tabs/images

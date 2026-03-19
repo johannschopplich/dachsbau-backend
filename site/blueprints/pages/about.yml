@@ -8,5 +8,20 @@ options:
   delete: false
   preview: "{{ page.frontendUrl }}"
 
-fields:
-  layout: fields/layout
+tabs:
+  content:
+    label: Inhalt
+    icon: draft
+    sections:
+      main:
+        type: fields
+        fields:
+          layout: fields/layout
+
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta: sections/meta
+
+  images: tabs/images

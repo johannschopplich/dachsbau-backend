@@ -1,0 +1,5 @@
+label: Titel (Überschreiben)
+type: text
+icon: title
+placeholder: "{{ page.title }} – {{ site.title }}"
+help: Optionaler abweichender Titel für Suchmaschinen.

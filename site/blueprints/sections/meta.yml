@@ -1,0 +1,5 @@
+type: fields
+fields:
+  customTitle: fields/customTitle
+  description: fields/description
+  cover: fields/cover

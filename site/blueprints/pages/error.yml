@@ -1,20 +1,11 @@
+extends: pages/default
+
 title: Fehler
 
 icon: ⚠️
 
 options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
   preview: "{{ page.frontendUrl }}"
-
-columns:
-  - width: 2/3
-    sections:
-      text: sections/text
-
-  - width: 1/3
-    sections:
-      meta:
-        type: fields
-        fields:
-          description: fields/description
-          cover: fields/cover
-      images: sections/images
