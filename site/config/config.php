@@ -55,11 +55,18 @@ return [
         }
     ],
 
+    'cors' => [
+        'allowOrigin' => env('KIRBY_CORS_ALLOW_ORIGIN', '*'),
+        'allowHeaders' => true,
+        'maxAge' => 86400
+    ],
+
     'headless' => [
         'token' => env('KIRBY_HEADLESS_API_TOKEN'),
 
         'panel' => [
-            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL')
+            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL'),
+            'redirect' => true
         ]
     ]
 ];
