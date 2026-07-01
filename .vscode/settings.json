@@ -1,7 +1,4 @@
 {
-  // Enable ESLint flat config support
-  "eslint.useFlatConfig": true,
-
   // Use Prettier as the default formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -23,7 +20,18 @@
     "markdown",
     "json",
     "jsonc",
-    "yaml"
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "svelte",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
   ],
 
   // Use Intelephense as the default PHP formatter
