@@ -1,48 +1,51 @@
-# Dachsbau Backend
+<div align="center">
 
-> [!NOTE]
-> Forked from [🍫 Cacao Kit Backend](https://github.com/johannschopplich/cacao-kit-backend). All of the features and settings apply here as well.
+# Dachsbau Tautenhain (Backend)
 
-This website is intended as the backend for the Nuxt 3 frontend. If the URL is called and no `Authentication` header is sent with the requerst, the user will automatically forwarded to the Kirby Panel.
+Headless Kirby backend for [dachsbau-tautenhain.de](https://dachsbau-tautenhain.de).
 
-👉 See the [Dachsbau Frontend](https://github.com/johannschopplich/dachsbau-frontend) repository for the whole frontend code!
+[Website](https://dachsbau-tautenhain.de) •
+[Frontend](https://github.com/johannschopplich/dachsbau-frontend)
 
-## Prerequisites
+</div>
 
-- PHP 8.2+
+## Why
 
-Kirby is not free software. However, you can try Kirby and the Starterkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
+Madlen – one of my closest friends – moved into the Dachsbau in Tautenhain to bundle her skills in one place and turn her passion into a profession. Julia Frank and I designed and built the website for her venture: Julia drew the illustrations, I did code and photography. This repository is the content half – a headless Kirby instance that serves the [Nuxt 4 frontend](https://github.com/johannschopplich/dachsbau-frontend) over KQL.
 
-## Setup
+The project doubled as a prototype: there was no best-practice solution for running Kirby truly headless in 2022, so the [kirby-headless-starter](https://github.com/johannschopplich/kirby-headless-starter) and [nuxt-kql](https://nuxt-kql.byjohann.dev) (today [Nuxt Kirby](https://nuxt-kirby.byjohann.dev)) grew out of this site.
 
-### Composer
+## How It's Built
 
-Kirby-related dependencies are managed via [Composer](https://getcomposer.org) and located in the `vendor` directory. To install them, run:
+- [Kirby 5](https://getkirby.com) – flat-file CMS, running pure headless (the only template redirects to the Panel)
+- [Kirby Headless](https://github.com/johannschopplich/kirby-headless) – bearer-token authentication, KQL endpoint, CORS
+- [Cacao Kit Backend](https://github.com/johannschopplich/cacao-kit-backend) as the base – block-first content modeling
 
-```bash
-composer install
-```
+Everything site-specific lives in blueprints and `site/config`: a German panel, custom section blocks (`section-backers`, `section-blog`) and a blocks resolver that maps file UUIDs to URLs and dimensions. Content, accounts and media are not committed – the repository ships structure and configuration only.
 
-### Environment Variables
+## Development
 
-Duplicate the [`.env.development.example`](.env.development.example) as `.env`:
+1. Create your `.env` from the example:
 
-```bash
-cp .env.development.example .env
-```
+   ```bash
+   cp .env.development.example .env
+   ```
 
-Optionally, adapt it's values.
+2. Install dependencies:
 
-## Usage
+   ```bash
+   composer install
+   ```
 
-See the [Dachsbau Frontend](https://github.com/johannschopplich/dachsbau-frontend) repository.
+3. Run the PHP server – or use a dev server of your choice (e.g. Laravel Valet):
 
-### Deployment
+   ```bash
+   composer start
+   ```
 
-> [!NOTE]
-> See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for exemplary deployment instructions.
->
-> Some hosting environments require to uncomment `RewriteBase /` in [`.htaccess`](public/.htaccess) to make site links work.
+Linting and formatting run through pnpm: `pnpm install`, then `pnpm run lint` or `pnpm run format`.
+
+Deployment runs through [`scripts/ploi-deploy.sh`](./scripts/ploi-deploy.sh) on [ploi.io](https://ploi.io).
 
 ## License
 
