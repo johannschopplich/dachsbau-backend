@@ -45,7 +45,7 @@ Everything site-specific lives in blueprints and `site/config`: a German panel, 
 
 Linting and formatting run through pnpm: `pnpm install`, then `pnpm run lint` or `pnpm run format`.
 
-Deployment runs through [`scripts/ploi-deploy.sh`](./scripts/ploi-deploy.sh) on [ploi.io](https://ploi.io).
+Pushes to `main` deploy through [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
 
 ## License
 
