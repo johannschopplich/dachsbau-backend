@@ -27,6 +27,6 @@ fields:
         label: Logo
         type: files
         multiple: false
-        query: page.files.template("image")
+        query: model.files.template("image")
         uploads:
           template: image
