@@ -10,9 +10,9 @@
     "format:check": "prettier \"**/*.{css,html,js,json,md,ts,vue,yml}\" --check"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^9.1.0",
-    "eslint": "^10.6.0",
+    "@antfu/eslint-config": "^10.0.0",
+    "eslint": "^10.14.0",
     "jiti": "^2.7.0",
-    "prettier": "^3.9.4"
+    "prettier": "^3.9.10"
   }
 }
