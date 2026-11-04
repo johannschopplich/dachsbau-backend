@@ -3,7 +3,7 @@ label: Beiträge
 parent: kirby.page("blog")
 template: note
 sortBy: date desc
-info: "{{ page.published.toDate('dd.MM.Y') }}"
+info: "{{ page.date.toDate('dd.MM.yyyy') }}"
 empty: Noch keine Beiträge
 image:
   query: page.cover.toFile

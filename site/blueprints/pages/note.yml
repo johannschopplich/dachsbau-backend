@@ -1,6 +1,6 @@
 title: Beitrag
 
-num: '{{ page.published.toDate("YMMdd") }}'
+num: '{{ page.date.toDate("yyyyMMdd") }}'
 
 icon: 📖
 
