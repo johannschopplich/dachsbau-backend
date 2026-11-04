@@ -6,7 +6,6 @@ use Kirby\Content\Field;
 $writerResolver = fn (Field $field, Block $block) => $field->resolvePermalinks()->value();
 
 return [
-    'resolvedKey' => 'resolved',
     'resolvers' => [
         'heading:text' => $writerResolver,
         'image:caption' => $writerResolver,
