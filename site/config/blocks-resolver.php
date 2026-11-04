@@ -3,12 +3,17 @@
 use Kirby\Cms\Block;
 use Kirby\Content\Field;
 
+$writerResolver = fn (Field $field, Block $block) => $field->resolvePermalinks()->value();
+
 return [
     'resolvedKey' => 'resolved',
     'resolvers' => [
-        'text:text' => function (Field $field, Block $block) {
-            return $field->permalinksToUrls()->value();
-        },
+        'heading:text' => $writerResolver,
+        'image:caption' => $writerResolver,
+        'list:text' => $writerResolver,
+        'quote:text' => $writerResolver,
+        'quote:citation' => $writerResolver,
+        'text:text' => $writerResolver,
         'section-backers:backers' => function (Field $field, Block $block) {
             $structure = $field->toStructure();
 
@@ -18,7 +23,7 @@ return [
                 return [
                     'title' => $item->title()->value(),
                     'website' => $item->website()->value(),
-                    'text' => $item->text()->value(),
+                    'text' => $item->text()->resolvePermalinks()->value(),
                     'logo' => [
                         'url' => $image?->url(),
                         'width' => $image?->width(),
