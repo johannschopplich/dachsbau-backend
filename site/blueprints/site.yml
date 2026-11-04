@@ -45,6 +45,5 @@ tabs:
           meta:
             type: fields
             fields:
-              customTitle: fields/customTitle
               cover: fields/cover
               description: fields/description
