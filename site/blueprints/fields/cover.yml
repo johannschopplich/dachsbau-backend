@@ -4,4 +4,4 @@ multiple: false
 query: model.files.template("image")
 uploads:
   template: image
-help: Ein Vorschaubild für Suchmaschinen und sozialen Netzwerke.
+help: Ein Vorschaubild für Suchmaschinen und soziale Netzwerke.
