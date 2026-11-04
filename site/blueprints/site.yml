@@ -27,23 +27,31 @@ tabs:
               - home
               - notes
 
-  settings:
-    label: Einstellungen
-    icon: settings
-    columns:
-      - width: 1/2
-        sections:
-          content:
+          footer:
             type: fields
             fields:
               footer:
                 label: Fußzeile
                 type: pages
 
-      - width: 1/2
+  seo:
+    label: SEO
+    icon: search
+    columns:
+      - width: 2/3
         sections:
           meta:
             type: fields
             fields:
-              cover: fields/cover
-              description: fields/description
+              description:
+                extends: fields/description
+                help: Für Seiten ohne eigene Beschreibung.
+
+      - width: 1/3
+        sections:
+          preview:
+            type: fields
+            fields:
+              cover:
+                extends: fields/cover
+                help: Für Seiten ohne eigenes Vorschaubild.
