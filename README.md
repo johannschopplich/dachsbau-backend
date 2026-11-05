@@ -1,8 +1,8 @@
 <div align="center">
 
-# Dachsbau Tautenhain (Backend)
+# Dachsbau Tautenhain
 
-Headless Kirby backend for [dachsbau-tautenhain.de](https://dachsbau-tautenhain.de).
+Backend for [dachsbau-tautenhain.de](https://dachsbau-tautenhain.de) – headless Kirby for the Nuxt frontend.
 
 [Website](https://dachsbau-tautenhain.de) •
 [Frontend](https://github.com/johannschopplich/dachsbau-frontend)
@@ -34,20 +34,11 @@ Everything site-specific lives in blueprints and `site/config`: a German panel, 
 2. Install dependencies:
 
    ```bash
+   pnpm install
    composer install
    ```
 
-3. Run the PHP server – or use a dev server of your choice (e.g. Laravel Valet):
-
-   ```bash
-   composer start
-   ```
-
-Content lives only on the server. `scripts/sync-content.sh --download` or `--upload` shows a dry run of the rsync, `--apply` runs it.
-
-Linting and formatting run through pnpm: `pnpm install`, then `pnpm run lint` or `pnpm run format`.
-
-Pushes to `main` deploy through [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
+[`AGENTS.md`](./AGENTS.md) lists the commands. Pushes to `main` deploy through [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
 
 ## License
 
