@@ -43,6 +43,8 @@ Everything site-specific lives in blueprints and `site/config`: a German panel, 
    composer start
    ```
 
+Content lives only on the server. `scripts/sync-content.sh --download` or `--upload` shows a dry run of the rsync, `--apply` runs it.
+
 Linting and formatting run through pnpm: `pnpm install`, then `pnpm run lint` or `pnpm run format`.
 
 Pushes to `main` deploy through [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
