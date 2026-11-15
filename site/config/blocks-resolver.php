@@ -37,7 +37,7 @@ return [
         'section-blog:posts' => function (Field $field, Block $block) {
             $kirby = $block->kirby();
             $urlParser = $kirby->option('permalinksResolver.urlParser');
-            $posts = $kirby->page('blog')?->children()->listed();
+            $posts = $kirby->page('blog')?->children()->listed()->sortBy('date', 'desc');
 
             if ($posts === null) {
                 return [];
